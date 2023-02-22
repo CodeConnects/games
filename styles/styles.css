@@ -2,6 +2,8 @@ body { background-color:#171717;
     font-family: 'Audiowide', cursive; font-family: 'Orbitron', sans-serif;
 }
 
+img { margin: 0px; padding: 0px; }
+
 h1 { text-align: center; color: #fafafa; font-weight: 500; font-size: 3rem; letter-spacing: .3rem; }
 
 .game-link-box, .game-link-box img { width: 200px; text-align: center; }

@@ -3,3 +3,7 @@ body { background-color:#171717;
 }
 
 h1 { text-align: center; color: #fafafa; font-weight: 500; font-size: 3rem; letter-spacing: .3rem; }
+
+.game-link-box, .game-link-box img { width: 200px; text-align: center; }
+
+.game-link-box { margin: 0px auto; }

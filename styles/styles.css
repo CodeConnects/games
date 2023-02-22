@@ -4,6 +4,8 @@ body { font-family: 'Audiowide', cursive; font-family: 'Orbitron', sans-serif;
 
 img { margin: 0px; padding: 0px; width: 320px; border: 2px solid black; }
 
+img:hover { opacity: 0.5; }
+
 h1, h2 { text-align: center; color: #fafafa; font-weight: 500; }
 
 h1 { font-size: 3rem; }

@@ -2,7 +2,7 @@ body { font-family: 'Audiowide', cursive; font-family: 'Orbitron', sans-serif;
     letter-spacing: .3rem; background-color:#171717;
 }
 
-img { margin: 0px; padding: 0px; }
+img { margin: 0px; padding: 0px; width: 320px; border: 1px solid black; }
 
 h1, h2 { text-align: center; color: #fafafa; font-weight: 500; }
 
@@ -10,6 +10,6 @@ h1 { font-size: 3rem; }
 
 h2 { font-size: 2rem; }
 
-.game-link-box, .game-link-box img { width: 320px; text-align: center; }
-
-.game-link-box { margin: 50px auto; background-color: #444; padding: 10px; border-radius: 8px; }
+.game-link-box { width: 324px; text-align: center; margin: 50px auto; 
+    background-color: #444; padding: 10px; border-radius: 8px; 
+}

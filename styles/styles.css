@@ -10,6 +10,6 @@ h1 { font-size: 3rem; }
 
 h2 { font-size: 2rem; }
 
-.game-link-box, .game-link-box img { width: 200px; text-align: center; }
+.game-link-box, .game-link-box img { width: 320px; text-align: center; }
 
 .game-link-box { margin: 50px auto; background-color: #444; padding: 10px; border-radius: 8px; }

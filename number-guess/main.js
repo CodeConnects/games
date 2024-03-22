@@ -71,5 +71,28 @@ function displayHighScores() {
     document.getElementById('highScores').innerHTML = highScoresHTML;
 }
 
+// Theme switcher
+const themeSwitch = document.getElementById('themeSwitch');
+const body = document.body;
+
+themeSwitch.addEventListener('click', () => {
+  body.classList.toggle('dark-theme');
+  const isDarkTheme = body.classList.contains('dark-theme');
+  localStorage.setItem('darkTheme', isDarkTheme);
+  updateThemeSwitchText();
+});
+
+function updateThemeSwitchText() {
+  const isDarkTheme = body.classList.contains('dark-theme');
+  themeSwitch.textContent = isDarkTheme ? 'Switch to Light Theme' : 'Switch to Dark Theme';
+}
+
+// Check for saved theme preference
+const savedTheme = localStorage.getItem('darkTheme');
+if (savedTheme === 'true') {
+  body.classList.add('dark-theme');
+}
+updateThemeSwitchText();
+
 startNewGame();
 displayHighScores();

@@ -1,3 +1,19 @@
+:root {
+  --bg-color: #f0f0f0;
+  --container-bg: white;
+  --text-color: #333;
+  --button-bg: #007bff;
+  --button-text: white;
+  --input-border: #ccc;
+}
+.dark-theme {
+  --bg-color: #333;
+  --container-bg: #555;
+  --text-color: #f0f0f0;
+  --button-bg: #4CAF50;
+  --button-text: white;
+  --input-border: #777;
+}
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -5,10 +21,12 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
 }
 .game-container {
-  background-color: white;
+  background-color: var(--container-bg);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -20,11 +38,29 @@ input, button, select {
   margin: 10px 0;
   padding: 8px;
   width: calc(100% - 20px);
+  background-color: var(--container-bg);
+  color: var(--text-color);
+  border: 1px solid var(--input-border);
+}
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  opacity: 0.9;
 }
 .feedback {
   font-weight: bold;
   margin: 10px 0;
 }
-.correct { color: green; }
-.incorrect { color: red; }
+.correct { color: #4CAF50; }
+.incorrect { color: #f44336; }
 #highScores { margin-top: 20px; }
+#themeSwitch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

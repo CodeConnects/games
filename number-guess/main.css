@@ -6,6 +6,7 @@
   --button-text: white;
   --input-border: #ccc;
 }
+
 .dark-theme {
   --bg-color: #333;
   --container-bg: #555;
@@ -14,6 +15,7 @@
   --button-text: white;
   --input-border: #777;
 }
+
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -25,16 +27,20 @@ body {
   color: var(--text-color);
   transition: all 0.3s ease;
 }
+
 .game-container {
   background-color: var(--container-bg);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 400px;
   width: 100%;
 }
-input, button, select {
+
+input,
+button,
+select {
   margin: 10px 0;
   padding: 8px;
   width: calc(100% - 20px);
@@ -42,6 +48,7 @@ input, button, select {
   color: var(--text-color);
   border: 1px solid var(--input-border);
 }
+
 button {
   background-color: var(--button-bg);
   color: var(--button-text);
@@ -49,16 +56,28 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 button:hover {
   opacity: 0.9;
 }
+
 .feedback {
   font-weight: bold;
   margin: 10px 0;
 }
-.correct { color: #4CAF50; }
-.incorrect { color: #f44336; }
-#highScores { margin-top: 20px; }
+
+.correct {
+  color: #4CAF50;
+}
+
+.incorrect {
+  color: #f44336;
+}
+
+#highScores {
+  margin-top: 20px;
+}
+
 #themeSwitch {
   position: absolute;
   top: 10px;

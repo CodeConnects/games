@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Guess</title>
+  <title>Enhanced Guess the Number</title>
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <button id="themeSwitch">Change Theme</button>
+  <button id="themeSwitch">Switch Theme</button>
   <div class="game-container">
     <h1>Guess the Number</h1>
     <select id="difficulty">
@@ -17,16 +17,20 @@
       <option value="medium" selected>Medium (1-100)</option>
       <option value="hard">Hard (1-200)</option>
     </select>
-    <button onclick="startNewGame()">New Game</button>
+    <button id="newGameBtn">New Game</button>
     <p id="rangeInfo"></p>
     <p id="timer">Time: 0s</p>
     <input type="number" id="guessInput" min="1">
-    <button onclick="checkGuess()">Submit Guess</button>
+    <button id="submitGuessBtn">Submit Guess</button>
     <p id="message" class="feedback"></p>
     <div id="highScores"></div>
   </div>
 
-  <script src="main.js"></script>
+  <audio id="correctSound" src="right-answer.wav" preload="auto"></audio>
+  <audio id="incorrectSound" src="wrong-answer.wav" preload="auto"></audio>
+  <audio id="newGameSound" src="start-game.wav" preload="auto"></audio>
 
+  <script src="main.js"></script>
 </body>
+
 </html>
